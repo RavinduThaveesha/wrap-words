@@ -73,5 +73,5 @@ Output:
 
 
 #### Future Enhancements
-- Add support for more $length break parameters. ex: <br/>
-- Add support for more word break parameters. ex: -
+- Add support for more $length break parameters. ex: `<br/>`
+- Add support for more word break parameters. ex: `-`
