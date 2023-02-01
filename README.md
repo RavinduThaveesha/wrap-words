@@ -7,11 +7,6 @@ boundaries, only breaking a word if it is longer than the specified length.
 #### Function Flow Diagarm
 ![flow-diagarm](https://github.com/RavinduThaveesha/wrap-words/blob/main/flow-diagram.jpg)
 
-#### Complexity
-- Complexity of this function is O(n).
-
-![big-o](https://github.com/RavinduThaveesha/wrap-words/blob/main/big-o.jpg)
-
 #### Requirements
 - PHP 7.4 or above
 
@@ -38,6 +33,11 @@ Flexible talent development software, shaped by you.
 Totara combines skills and performance development
 to create lasting employee success.
 ```
+
+#### Complexity
+- Complexity of this function is O(n).
+
+![big-o](https://github.com/RavinduThaveesha/wrap-words/blob/main/big-o.jpg)
 
 
 
