@@ -5,12 +5,12 @@ that no line is longer than the specified length. If a line would exceed the spe
 boundaries, only breaking a word if it is longer than the specified length.
 
 #### Function Flow Diagarm
-![flow-diagarm](https://github.com/RavinduThaveesha/wrap-words/blob/main/flow-diagram.jpg)
+![flow-diagarm](https://github.com/RavinduThaveesha/wrap-words/blob/main/images/flow-diagram.jpg)
 
 #### Complexity
 - Complexity of this function is O(n).
 
-![big-o](https://github.com/RavinduThaveesha/wrap-words/blob/main/big-o.jpg)
+![big-o](https://github.com/RavinduThaveesha/wrap-words/blob/main/images/big-o.jpg)
 
 #### Requirements
 - PHP 7.4 or above
@@ -40,7 +40,7 @@ to create lasting employee success.
 ```
 
 #### How to Run Test
-- Add your test case into test.php 
+- Add your test case on `test.php`
 - Open your terminal and `cd` to the project folder
 - Run `php ./test.php`
 
@@ -51,13 +51,13 @@ assertWrapOutput("The quick brown fox jumped over the lazy dog.", 20, "The quick
 
 Output:
 
-Test Passed
+- Test Passed
 
-![test-passed](https://github.com/RavinduThaveesha/wrap-words/blob/main/big-o.jpg)
+![test-passed](https://github.com/RavinduThaveesha/wrap-words/blob/main/images/test-passed.png)
 
-Test Failed
+- Test Failed
 
-![test-failed](https://github.com/RavinduThaveesha/wrap-words/blob/main/big-o.jpg)
+![test-failed](https://github.com/RavinduThaveesha/wrap-words/blob/main/images/test-failed.png)
 
 
 
