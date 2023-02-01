@@ -36,12 +36,13 @@ function wrap(string $string = "", int $length = 100) : string {
         } else {
             # break the word if it is longer than $length.
             if (strlen($token) > $length) {
-                # split word by length and join to the line.
-                $first = substr($token, 0, $length);
-                $second = substr($token, $length, strlen($token));
-                # join the line to wrap string.
-                $wrapString .= trim($line).$break.trim($first).$break;
-                $line = trim($second).$space;
+                # split token into chunks by length.
+                $chunks = str_split($token, $length);
+                # combine splitted chunks using \n.
+                $combine = implode("\n", $chunks).$break;
+                #join the line to wrap string.
+                $wrapString .= trim($line).$break.$combine;
+                $line = "";
             } else {
                 # join the line to wrap string.
                 $wrapString .= trim($line).$break;
@@ -50,7 +51,7 @@ function wrap(string $string = "", int $length = 100) : string {
         }
     }
 
-    # join the last line to wrap string.
-    $wrapString .= trim($line);
-    return $wrapString;
+    # join the last line to wrap string and trim sides.
+    $wrapString .= $line;
+    return trim($wrapString);
 }
