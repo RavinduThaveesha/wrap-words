@@ -9,7 +9,7 @@ are broken into separate lines is replaced with a \n character.
 ![flow-diagarm](https://github.com/RavinduThaveesha/wrap-words/blob/main/flow-diagram.jpeg)
 
 #### Complexity
-Complexity of this function is O(n).
+- Complexity of this function is O(n).
 
 #### Requirements
 - PHP 7.4 or above
