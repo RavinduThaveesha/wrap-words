@@ -18,18 +18,13 @@ boundaries, only breaking a word if it is longer than the specified length.
 #### How to use
 - Intall PHP 7.4 or avobe in you system.
 - Clone the project form the repository.
-- Open your terminal and `cd` to the project folder
-- Run `php ./example.php`
+- Open your terminal and `cd` to the project folder.
+- Run `php ./example.php`.
 
-#### Example
+#### Examples
 ```
-require 'function.php';
-
 $string = "Flexible talent development software, shaped by you. Totara combines skills and performance development to create lasting employee success.";
 $length = 52;
-
-$wrapString = wrap($string, $length);
-echo $wrapString;
 ```
 
 Output:
@@ -39,10 +34,27 @@ Totara combines skills and performance development
 to create lasting employee success.
 ```
 
+```
+$string = "A very long woooooooooooooooooord. and something";
+$length = 8;
+```
+
+Output:
+```
+A very
+long
+wooooooo
+oooooooo
+ooord.
+and
+somethin
+g
+```
+
 #### How to Run Test
-- Add your test case on `test.php`
-- Open your terminal and `cd` to the project folder
-- Run `php ./test.php`
+- Add your test case on `test.php`.
+- Open your terminal and `cd` to the project folder.
+- Run `php ./test.php`.
 
 Example:
 ```
