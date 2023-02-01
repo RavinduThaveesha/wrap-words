@@ -5,5 +5,4 @@ require 'function.php';
 $string = "Flexible talent development software, shaped by you. Totara combines skills and performance development to create lasting employee success.";
 $length = 52;
 
-$wrapString = wrap($string, $length);
-echo $wrapString;
+print(wrap($string, $length));

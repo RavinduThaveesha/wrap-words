@@ -72,4 +72,6 @@ Output:
 ![test-failed](https://github.com/RavinduThaveesha/wrap-words/blob/main/images/test-failed.png)
 
 
-
+#### Future Enhancements
+- Add support for more $length break parameters. ex: <br/>
+- Add support for more word break parameters. ex: -

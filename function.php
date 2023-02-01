@@ -9,7 +9,7 @@
  * 
  * Complexity of this function is O(n).
  *
- * @param string $string - The input string to wrap
+ * @param string $string - The input string to wrap.
  * @param int $length [optional] - The maximum length of a line. Default is 100 characters.
  * @return string The wrapped string.
  */
