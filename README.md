@@ -6,7 +6,7 @@ boundaries, only breaking a word if it is longer than the specified length. Any 
 are broken into separate lines is replaced with a \n character.
 
 #### Function Flow Diagarm
-![flow-diagarm](image.png)
+![flow-diagarm](https://github.com/RavinduThaveesha/wrap-words/blob/main/flow-diagram.jpeg)
 
 #### Complexity
 Complexity of this function is O(n).
