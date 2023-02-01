@@ -16,4 +16,5 @@ function assertWrapOutput($string, $length, $expectedOutput) {
 
 
 assertWrapOutput("", 10, "Error: Input string cannot be empty.");
-#assertWrapOutput("An example of a long word is: Supercalifragulistic", 15, "An example of a \n long word is \n Supercalifragulistic");
+assertWrapOutput("The quick brown fox jumped over the lazy dog.", 20, "The quick brown fox\njumped over the lazy\ndog.");
+assertWrapOutput("Lengthofthisistwenty", 20, "Lengthofthisistwenty");
