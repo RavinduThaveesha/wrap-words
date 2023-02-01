@@ -39,9 +39,9 @@ function wrap(string $string = "", int $length = 100) : string {
                 # split token into chunks by length.
                 $chunks = str_split($token, $length);
                 # combine splitted chunks using \n.
-                $combine = implode("\n", $chunks).$break;
+                $chunkString = implode("\n", $chunks).$break;
                 #join the line to wrap string.
-                $wrapString .= trim($line).$break.$combine;
+                $wrapString .= trim($line).$break.$chunkString;
                 $line = "";
             } else {
                 # join the line to wrap string.
