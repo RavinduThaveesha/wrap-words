@@ -7,6 +7,8 @@
  * that no line is longer than the specified length. If a line would exceed the specified length, the function breaks at word
  * boundaries, only breaking a word if it is longer than the specified length. Any whitespace between two words that
  * are broken into separate lines is replaced with a \n character.
+ * 
+ * Complexity of this function is O(n).
  *
  * @param string $string - The input string to wrap
  * @param int $length [optional] - The maximum length of a line. Default is 100 characters.
