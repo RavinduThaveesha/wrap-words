@@ -9,6 +9,7 @@ boundaries, only breaking a word if it is longer than the specified length.
 
 #### Complexity
 - Complexity of this function is O(n).
+
 ![big-o](https://github.com/RavinduThaveesha/wrap-words/blob/main/flow-diagram.jpeg)
 
 #### Requirements
