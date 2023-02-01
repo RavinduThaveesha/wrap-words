@@ -5,8 +5,7 @@
  *
  * This function takes a string and a length as arguments, and returns the string with new lines added to ensure
  * that no line is longer than the specified length. If a line would exceed the specified length, the function breaks at word
- * boundaries, only breaking a word if it is longer than the specified length. Any whitespace between two words that
- * are broken into separate lines is replaced with a \n character.
+ * boundaries, only breaking a word if it is longer than the specified length. 
  * 
  * Complexity of this function is O(n).
  *
