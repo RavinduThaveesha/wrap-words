@@ -1,5 +1,18 @@
 <?php
 
+/**
+ * Wraps a string to a given number of length.
+ *
+ * This function takes a string and a length as arguments, and returns the string with new lines added to ensure
+ * that no line is longer than the specified length. If a line would exceed the specified length, the function breaks at word
+ * boundaries, only breaking a word if it is longer than the specified length. Any whitespace between two words that
+ * are broken into separate lines is replaced with a \n character.
+ *
+ * @param string $string - The input string to wrap
+ * @param int $length [optional] - The maximum length of a line. Default is 100 characters.
+ * @return string The wrapped string.
+ */
+
 function wrap(string $string = "", int $length = 100) : string {
     # return if string is empty and stop the process.
     if ($string === "") {

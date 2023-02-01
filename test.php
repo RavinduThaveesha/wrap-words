@@ -1,4 +1,5 @@
 <?php
+
 require 'function.php';
 
 function assertWrapOutput($string, $length, $expectedOutput) {
