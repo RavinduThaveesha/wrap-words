@@ -5,7 +5,7 @@ that no line is longer than the specified length. If a line would exceed the spe
 boundaries, only breaking a word if it is longer than the specified length.
 
 #### Function Flow Diagarm
-![flow-diagarm](https://github.com/RavinduThaveesha/wrap-words/blob/main/flow-diagram.jpeg)
+![flow-diagarm](https://github.com/RavinduThaveesha/wrap-words/blob/main/flow-diagram.jpg)
 
 #### Complexity
 - Complexity of this function is O(n).
