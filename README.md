@@ -9,12 +9,8 @@ boundaries, only breaking a word if it is longer than the specified length.
 
 #### Complexity
 - Complexity of this function is O(n).
-<<<<<<< HEAD
 
-![big-o](https://github.com/RavinduThaveesha/wrap-words/blob/main/flow-diagram.jpeg)
-=======
 ![big-o](https://github.com/RavinduThaveesha/wrap-words/blob/main/big-o.jpg)
->>>>>>> bf49d29ced7150d1a6298a087cdca198363577e5
 
 #### Requirements
 - PHP 7.4 or above
