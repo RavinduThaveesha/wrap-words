@@ -7,6 +7,11 @@ boundaries, only breaking a word if it is longer than the specified length.
 #### Function Flow Diagarm
 ![flow-diagarm](https://github.com/RavinduThaveesha/wrap-words/blob/main/flow-diagram.jpg)
 
+#### Complexity
+- Complexity of this function is O(n).
+
+![big-o](https://github.com/RavinduThaveesha/wrap-words/blob/main/big-o.jpg)
+
 #### Requirements
 - PHP 7.4 or above
 
@@ -34,11 +39,25 @@ Totara combines skills and performance development
 to create lasting employee success.
 ```
 
-#### Complexity
-- Complexity of this function is O(n).
+#### How to Run Test
+- Add your test case into test.php 
+- Open your terminal and `cd` to the project folder
+- Run `php ./test.php`
 
-![big-o](https://github.com/RavinduThaveesha/wrap-words/blob/main/big-o.jpg)
+Example:
+```
+assertWrapOutput("The quick brown fox jumped over the lazy dog.", 20, "The quick brown fox\njumped over the lazy\ndog.");
+```
 
+Output:
+
+Test Passed
+
+![test-passed](https://github.com/RavinduThaveesha/wrap-words/blob/main/big-o.jpg)
+
+Test Failed
+
+![test-failed](https://github.com/RavinduThaveesha/wrap-words/blob/main/big-o.jpg)
 
 
 
