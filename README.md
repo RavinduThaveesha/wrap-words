@@ -4,11 +4,18 @@ This function takes a string and a length as arguments, and returns the string w
 that no line is longer than the specified length. If a line would exceed the specified length, the function breaks at word
 boundaries, only breaking a word if it is longer than the specified length.
 
+#### Files
+| Name            | Description                                 | 
+| :---            | :---                                       | 
+| function.php    | Contains the wrap function.                 |
+| test.php        | Contains the test cases.                    |
+| example.php     | Contains the sample implementation.         |
+
 #### Function Flow Diagarm
 ![flow-diagarm](https://github.com/RavinduThaveesha/wrap-words/blob/main/images/flow-diagram.jpg)
 
-#### Complexity
-- Complexity of this function is O(n).
+#### Time Complexity
+- Time complexity of this function is O(n).
 
 ![big-o](https://github.com/RavinduThaveesha/wrap-words/blob/main/images/big-o.jpg)
 
