@@ -23,8 +23,8 @@ boundaries, only breaking a word if it is longer than the specified length.
 - PHP 7.4 or above
 
 #### How to use
-- Intall PHP 7.4 or avobe in you system.
-- Clone the project form the repository.
+- Install PHP 7.4 or above in your system.
+- Clone the project from the repository.
 - Open your terminal and `cd` to the project folder.
 - Run `php ./example.php`.
 
