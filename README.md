@@ -34,10 +34,8 @@ boundaries, only breaking a word if it is longer than the specified length.
 ```
 $string = "Flexible talent development software, shaped by you. Totara combines skills and performance development to create lasting employee success.";
 $length = 52;
-```
 
 Output:
-```
 Flexible talent development software, shaped by you.
 Totara combines skills and performance development
 to create lasting employee success.
@@ -46,10 +44,8 @@ to create lasting employee success.
 ```
 $string = "A very long woooooooooooooooooord. and something";
 $length = 8;
-```
 
 Output:
-```
 A very
 long
 wooooooo
