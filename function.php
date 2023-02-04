@@ -20,13 +20,24 @@ function wrap(string $string = "", int $length = 100) : string {
         return "Error: Input string cannot be empty.";
     } 
 
+    # return if string is empty and stop the process.
+    if (!is_int($length) || $length <= 0) {
+        return "Error: Length must be a positive integer.";
+    }
+
     # define necessary variables.
     $wrapString = "";
     $line = "";
     $space = " ";
     $break = "\n";
+    # this regular expression will match any sequence of one or more \n characters.
+    # if you want to extend to search other characters such as <br/> add them ex: /(\n|<br\/>)+/
+    $filter = "/(\n)+/";
+    
+    # clean the string before tokeniz
+    $cleanString = preg_replace($filter, $space, $string);
     # split string into an array of tokens.
-    $tokens = explode($space, $string);
+    $tokens = explode($space, $cleanString);
     
     # loop through the tokens and create wrap string.
     foreach ($tokens as $token) {
