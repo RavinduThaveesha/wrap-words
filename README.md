@@ -32,28 +32,23 @@ boundaries, only breaking a word if it is longer than the specified length.
 
 #### Examples
 ```
-$string = "Flexible talent development software, shaped by you. Totara combines skills and performance development to create lasting employee success.";
-$length = 52;
+$string = "If you're so afraid of failure, you will never succeed.";
+$length = 23;
 
 Output:
-Flexible talent development software, shaped by you.
-Totara combines skills and performance development
-to create lasting employee success.
+If you're so afraid of
+failure, you will never
+succeed.
 ```
 
 ```
-$string = "A very long woooooooooooooooooord. and something";
-$length = 8;
+$string = "The quick brown fox jumped over the lazy dog";
+$length = 20;
 
 Output:
-A very
-long
-wooooooo
-oooooooo
-ooord.
-and
-somethin
-g
+The quick brown fox
+jumped over the lazy
+dog
 ```
 
 #### How to Run Test

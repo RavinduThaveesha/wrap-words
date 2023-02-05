@@ -29,7 +29,7 @@ function wrap(string $string = "", int $length = 100) : string {
     $wrap = "";
     $space = " ";
     $break = "\n";
-    $fillLength = $previousLength = 0;
+    $line = "";
     # this regular expression will match any sequence of one or more \n,\s characters.
     # if you want to extend to search other characters such as <br/> add them ex: /(\n|<br\/>)+/
     $filter = "/(\n)+/";
@@ -37,42 +37,33 @@ function wrap(string $string = "", int $length = 100) : string {
     # clean the string before tokenization.
     $cleanString = preg_replace($filter, $space, $string);
     # split string into an array of tokens.
-    $tokens = str_split($cleanString, $length);
+    $tokens = explode($space, $cleanString);
     
     # loop through the tokens and create wrap string.
-    foreach ($tokens as $key => $token) {
-        # reset fill.
-        $fill = "";
-
-        # remove whitespace if the first character is a whitespace to avoid empty spaces in left side.
-        if ($token[0] == $space) {
-            $token = substr($token, 1);
-        }
-      
-        # remove previously selected part form the string.
-        if ($previousLength) {
-            $token = substr($token, $previousLength);
-
-            # remove whitspaces between characters, ex: "g  w" to avoid <space>w situations.
-            if ($token && $token[0] == $space) {
-                $token = substr($token, 1);
-            }
-        }
-      
-        # get the filling length.
-        $fillLength = $length - strlen($token);
-      
-        # select filling chunk from the next token.
-        if ($fillLength > 0 && count($tokens) - 1 > $key) {
-            $fill = substr($tokens[$key+1], 0, $fillLength);
-        }
-      
-        # update previous length with new length.
-        $previousLength = $fillLength;
+    foreach ($tokens as $token) {
+        # if $line + $token length is less than the $length then add to $length and continue to next iteration.
+        if (strlen($line.$token) <= $length) {
+            $line .= $token.$space; 
+            continue;
+        } 
         
-        # join the line into wrap string.
-        $wrap .= $token.$fill.$break;
+        # join the line to the wrap string and trim right side.
+        if ($line) {
+            $wrap .= rtrim($line).$break;
+        }
+        
+        # if the $token length is grater than $length then split by $length.
+        if (strlen($token) > $length) {
+            $chunks = str_split($token, $length);
+            # join the line to wrap string.
+            $wrap .= implode($break, $chunks).$break;
+            $line = "";
+        } else {
+            $line = $token.$space;
+        }
     }
 
+    # join the last line to wrap string and trim sides.
+    $wrap .= $line;
     return trim($wrap);
 }
