@@ -33,12 +33,12 @@ boundaries, only breaking a word if it is longer than the specified length.
 #### Examples
 ```
 $string = "If you're so afraid of failure, you will never succeed.";
-$length = 23;
+$length = 22;
 
 Output:
 If you're so afraid of
-failure, you will never
-succeed.
+failure, you will
+never succeed.
 ```
 
 ```

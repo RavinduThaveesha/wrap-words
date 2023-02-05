@@ -35,3 +35,4 @@ assertWrapOutput("nospacesyetverylongword", 8, "nospaces\nyetveryl\nongword");
 assertWrapOutput("test\ntesting", 4, "test\ntest\ning");
 assertWrapOutput("test\n\ntesting", 4, "test\ntest\ning");
 assertWrapOutput("test testing", 4, "test\ntest\ning");
+assertWrapOutput("test  testing", 4, "test\ntest\ning");

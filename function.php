@@ -32,9 +32,9 @@ function wrap(string $string = "", int $length = 100) : string {
     $line = "";
     # this regular expression will match any sequence of one or more \n,\s characters.
     # if you want to extend to search other characters such as <br/> add them ex: /(\n|<br\/>)+/
-    $filter = "/(\n)+/";
+    $filter = "/(\n|\s)+/";
     
-    # clean the string before tokenization.
+    # clean the string before tokenization, replace \n and \s characters with single whitespace.
     $cleanString = preg_replace($filter, $space, $string);
     # split string into an array of tokens.
     $tokens = explode($space, $cleanString);
