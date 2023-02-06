@@ -4,7 +4,7 @@ This function takes a string and a length as arguments, and returns the string w
 that no line is longer than the specified length. If a line would exceed the specified length, the function breaks at word
 boundaries, only breaking a word if it is longer than the specified length.
 
-##### Demo: https://replit.com/@RavinduThaveesh/WrapWord#main.php
+##### Demo: https://replit.com/@RavinduThaveesh/WordWrap#main.php
 
 #### Files
 | Name            | Description                                 | 
