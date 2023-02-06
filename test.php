@@ -40,3 +40,5 @@ assertWrapOutput("12345678910", 4, "1234\n5678\n910");
 assertWrapOutput("1234567891 0", 4, "1234\n5678\n91\n0");
 assertWrapOutput("test<br/>testing", 4, "test\ntest\ning");
 assertWrapOutput("test test<br/>ing", 4, "test\ntest\ning");
+assertWrapOutput("This is a test string", 10, "This is a\ntest\nstring");
+assertWrapOutput("This is another test string", 12, "This is\nanother test\nstring");
