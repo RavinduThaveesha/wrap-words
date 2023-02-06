@@ -42,3 +42,4 @@ assertWrapOutput("test<br/>testing", 4, "test\ntest\ning");
 assertWrapOutput("test test<br/>ing", 4, "test\ntest\ning");
 assertWrapOutput("This is a test string", 10, "This is a\ntest\nstring");
 assertWrapOutput("This is another test string", 12, "This is\nanother test\nstring");
+assertWrapOutput("This string is quite long", 8, "This\nstring\nis quite\nlong");
