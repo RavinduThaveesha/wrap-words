@@ -38,3 +38,5 @@ assertWrapOutput("test  testing", 4, "test\ntest\ning");
 assertWrapOutput(12345678910, 4, "1234\n5678\n910");
 assertWrapOutput("12345678910", 4, "1234\n5678\n910");
 assertWrapOutput("1234567891 0", 4, "1234\n5678\n91\n0");
+assertWrapOutput("test<br/>testing", 4, "test\ntest\ning");
+assertWrapOutput("test test<br/>ing", 4, "test\ntest\ning");

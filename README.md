@@ -14,7 +14,7 @@ boundaries, only breaking a word if it is longer than the specified length.
 | example.php     | Contains the sample implementation.         |
 
 #### Function Flow Diagarm
-![flow-diagarm](https://github.com/RavinduThaveesha/wrap-words/blob/main/images/flow-diagram.jpg)
+![flow-diagarm](https://github.com/RavinduThaveesha/wrap-words/blob/main/images/flow-diagram.jpeg)
 
 #### Time Complexity
 - Time complexity of this function is O(n).
