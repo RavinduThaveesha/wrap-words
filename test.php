@@ -23,7 +23,6 @@ assertWrapOutput("test testing", 0, "Error: Length must be a positive integer.")
 assertWrapOutput("test testing", -1, "Error: Length must be a positive integer.");
 assertWrapOutput("test testing", '0', "Error: Length must be a positive integer.");
 assertWrapOutput("test testing", '-1', "Error: Length must be a positive integer.");
-assertWrapOutput("test testing", 4, "test\ntest\ning");
 assertWrapOutput("", 0, "Error: Input string cannot be empty.");
 assertWrapOutput("The quick brown fox jumped over the lazy dog.", 20, "The quick brown fox\njumped over the lazy\ndog.");
 assertWrapOutput("A very long woooooooooooord.", 8, "A very\nlong\nwooooooo\nooooord.");
@@ -36,3 +35,6 @@ assertWrapOutput("test\ntesting", 4, "test\ntest\ning");
 assertWrapOutput("test\n\ntesting", 4, "test\ntest\ning");
 assertWrapOutput("test testing", 4, "test\ntest\ning");
 assertWrapOutput("test  testing", 4, "test\ntest\ning");
+assertWrapOutput(12345678910, 4, "1234\n5678\n910");
+assertWrapOutput("12345678910", 4, "1234\n5678\n910");
+assertWrapOutput("1234567891 0", 4, "1234\n5678\n91\n0");
