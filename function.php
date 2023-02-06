@@ -41,7 +41,7 @@ function wrap(string $string = "", int $length = 100) : string {
     
     # loop through the tokens and create wrap string.
     foreach ($tokens as $token) {
-        # if $line + $token length is less than the $length then add to $length and continue to next iteration.
+        # if $line + $token length is less than the $length then add to $line and continue to next iteration.
         if (strlen($line.$token) <= $length) {
             $line .= $token.$space; 
             continue;
